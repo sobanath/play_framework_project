@@ -1,0 +1,17 @@
+GET     /:name                 sample.sampController.viewComments(name: String)
+POST    /Comments              sample.sampController.getComments()
+GET      /:userId              sample.sampController.getUsers(userId: String)
+POST    /                      sample.sampController.createuser()
+
+
+GET     /post/val              sample.sampController.getPosted()
+
+
+POST    /signin                sample.sampController.signin()
+PUT     /:userId               sample.sampController.updateUser(userId : String)
+GET     /:mail                 sample.sampController.getuserLike(mail: String)
+DELETE  /:userId               sample.sampController.deleteUser(userId : String)
+GET     /                      sample.sampController.getLike()
+
+
+
