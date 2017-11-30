@@ -1,3 +1,4 @@
+import Demo.DemoRepositoryImpl;
 import com.google.inject.AbstractModule;
 import global.configuration.db.mongodb.MongoDBConnection;
 import user.UserRepository;
@@ -5,7 +6,8 @@ import user.UserRepositoryImpl;
 import user.UserService;
 import sample.sampRepository;
 import sample.sampRepositoryImpl;
-
+import Demo.DemoRepository;
+import Demo.DemoRepositoryImpl;
 
 
 /**
@@ -25,6 +27,7 @@ public class Module extends AbstractModule {
         bind(MongoDBConnection.class).asEagerSingleton();
         bind(UserRepository.class).to(UserRepositoryImpl.class);
         bind(sampRepository.class).to(sampRepositoryImpl.class);
+        bind(DemoRepository.class).to(DemoRepositoryImpl.class);
 
     }
 

@@ -1,17 +1,18 @@
-GET     /:name                 sample.sampController.viewComments(name: String)
-POST    /Comments              sample.sampController.getComments()
-GET      /:userId              sample.sampController.getUsers(userId: String)
-POST    /                      sample.sampController.createuser()
-
-
-GET     /post/val              sample.sampController.getPosted()
-
-
 POST    /signin                sample.sampController.signin()
-PUT     /:userId               sample.sampController.updateUser(userId : String)
-GET     /:mail                 sample.sampController.getuserLike(mail: String)
-DELETE  /:userId               sample.sampController.deleteUser(userId : String)
-GET     /                      sample.sampController.getLike()
+POST    /NewUser               sample.sampController.createuser()
+
+GET     /:name                 Demo.DemoController.viewComments(name: String)
+GET     /SortingMaxLikes       Demo.DemoController.getLike()
+GET     /:mail                 Demo.DemoController.getuserLike(mail: String)
+GET     /:userId               Demo.DemoController.getUsers(userId: String)
+POST    /BlogCreation          Demo.DemoController.createuser()
+PUT     /:userId               Demo.DemoController.updateUser(userId : String)
+DELETE  /:userId               Demo.DemoController.deleteUser(userId : String)
+POST    /UpdateComments        Demo.DemoController.getComments()
+GET     /SortComments          Demo.DemoController.getPosted()
+
+
+
 
 
 
